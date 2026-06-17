@@ -13,17 +13,35 @@
     <main>
         <h1>Teste JavaScript</h1>
         <div class="container">
+               <form>
+                <div>
+                    <label 
+                    class="form-label"
+                    for="nome"
+                    >Digite seu nome:</label>
+                    <input 
+                    class="form-control p-3" 
+                    type="text"
+                    id="nome">
+                </div>
+                <button class="btn btn-primary" onclick="imprimirNome()">Enviar dados</button>
+            </form> 
             <script>
-                console.log("Olá Mundo!")
+                   function imprimirNome() {
+                    window.alert("Seu formulário foi enviado")
+                }
 
-                let funcionario 
-                window.alert(funcionario)
+                // console.log("Olá Mundo!")
+
+                // let funcionario 
+                // window.alert(funcionario)
 
                 
-                window.alert("O seu tipo de dado, no momento está guardando: " + typeof (funcionario))
-                funcionario = "Filipe"
-                window.alert("Agora, seu tipo de dado está guardando: " + funcionario)
+                // window.alert("O seu tipo de dado, no momento está guardando: " + typeof (funcionario))
+                // funcionario = "Filipe"
+                // window.alert("Agora, seu tipo de dado está guardando: " + funcionario)
             
+                
             </script>
         </div>
     </main>
