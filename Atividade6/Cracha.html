@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crachá Virtual</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
     <main>
         <h1>Crie o seu crachá virtual</h1>
         <div>
-            <form action="">
-                
+            <form>
+                <div>
+                    <label class="form-label" for="nome">Digite seu nome:</label>
+                    <input class="form-control p-3" type="text" id="nome">
+                </div>
+                <div>
+                    <label class="form-label" for="idade">Qual a sua idade:</label>
+                    <input class="form-control p-3" type="number" id="idade">
+                </div>
+                <div>
+                    <label class="form-label" for="cargo">Digite o seu cargo:</label>
+                    <input class="form-control p-3" type="text" id="cargo">
+                </div>
+                <div>
+                    <label class="form-label" for="departemento">Qual o seu departamento:</label>
+                    <input class="form-control p-3" type="text" id="departemento">
+                </div>
+                <div>
+                    <label class="form-label" for="acesso">Tem acesso restrito?</label>
+                    <input type="checkbox" id="acesso">
+                </div>
+
+                <button class="btn btn-primary" onclick="imprimirNome()">Enviar dados</button>
+
             </form>
+             <script src="FormularioAtv6.js"></script>
         </div>
     </main>
 </body>
+
 </html>
