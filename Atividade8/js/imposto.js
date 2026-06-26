@@ -7,7 +7,10 @@ function calcular(){
         valorFinal = (valorProduto * 1.2) * 1.9
     }
     
-document.getElementById("valorFinal").innerText = valorFinal
+document.getElementById("valorFinal").innerText = valorFinal;
+
+let valorEmReal = (valorFinal * 5.18)
+document.getElementById("valorEmReal").innerText = valorEmReal;
 
 
 }
